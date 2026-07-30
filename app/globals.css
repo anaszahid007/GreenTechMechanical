@@ -103,6 +103,15 @@
       transform: translateX(-50%);
     }
   }
+
+  @keyframes loading-bar {
+    0% {
+      transform: translateX(-150%);
+    }
+    100% {
+      transform: translateX(250%);
+    }
+  }
 }
 
 html {
