@@ -1,0 +1,152 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-on-tertiary-container: #42a548;
+  --color-on-surface: #1b1b1d;
+  --color-primary-container: #1b2b44;
+  --color-secondary-fixed-dim: #ffb4a4;
+  --color-error-container: #ffdad6;
+  --color-secondary: #b22200;
+  --color-on-secondary-fixed-variant: #8c1800;
+  --color-on-background: #1b1b1d;
+  --color-on-tertiary-fixed-variant: #005313;
+  --color-secondary-fixed: #ffdad3;
+  --color-error: #ba1a1a;
+  --color-primary-fixed-dim: #b7c7e7;
+  --color-surface-container: #efedf0;
+  --color-on-primary-fixed: #0a1c34;
+  --color-surface-container-high: #eae7ea;
+  --color-on-secondary-container: #fffbff;
+  --color-on-primary-fixed-variant: #384762;
+  --color-outline-variant: #c5c6ce;
+  --color-on-secondary-fixed: #3d0600;
+  --color-tertiary-fixed-dim: #78dc77;
+  --color-on-surface-variant: #44474d;
+  --color-inverse-on-surface: #f2f0f2;
+  --color-tertiary-fixed: #94f990;
+  --color-surface-container-lowest: #ffffff;
+  --color-secondary-container: #d73b19;
+  --color-outline: #75777e;
+  --color-surface-bright: #fbf9fb;
+  --color-inverse-surface: #303032;
+  --color-on-primary-container: #8392b0;
+  --color-on-secondary: #ffffff;
+  --color-background: #fbf9fb;
+  --color-on-tertiary: #ffffff;
+  --color-surface: #fbf9fb;
+  --color-inverse-primary: #b7c7e7;
+  --color-primary: #05162e;
+  --color-surface-dim: #dbd9dc;
+  --color-primary-fixed: #d6e3ff;
+  --color-tertiary: #001c03;
+  --color-on-primary: #ffffff;
+  --color-on-error-container: #93000a;
+  --color-on-error: #ffffff;
+  --color-surface-container-low: #f5f3f5;
+  --color-surface-variant: #e4e2e4;
+  --color-surface-container-highest: #e4e2e4;
+  --color-on-tertiary-fixed: #002204;
+  --color-tertiary-container: #003308;
+  --color-surface-tint: #4f5f7b;
+  --color-brand-orange: #ff5733;
+  --color-tech-green: #4caf50;
+
+  --radius-xl: 12px;
+
+  --spacing-base: 4px;
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+  --spacing-lg: 48px;
+  --spacing-xl: 80px;
+  --spacing-gutter: 24px;
+  --spacing-container-max: 1280px;
+
+  --font-body-md: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-headline-md: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  --font-headline-lg: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  --font-label-sm: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-label-bold: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-body-lg: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-headline-xl-mobile: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  --font-headline-xl: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+
+  --text-body-md: 16px;
+  --text-body-md--line-height: 1.5;
+  --text-headline-md: 24px;
+  --text-headline-md--line-height: 1.3;
+  --text-headline-lg: 32px;
+  --text-headline-lg--line-height: 1.2;
+  --text-label-sm: 12px;
+  --text-label-sm--line-height: 1.4;
+  --text-label-bold: 14px;
+  --text-label-bold--line-height: 1.4;
+  --text-label-bold--letter-spacing: 0.05em;
+  --text-body-lg: 18px;
+  --text-body-lg--line-height: 1.6;
+  --text-headline-xl-mobile: 32px;
+  --text-headline-xl-mobile--line-height: 1.2;
+  --text-headline-xl-mobile--letter-spacing: -0.01em;
+  --text-headline-xl: 48px;
+  --text-headline-xl--line-height: 1.1;
+  --text-headline-xl--letter-spacing: -0.02em;
+
+  --max-width-container-max: 1280px;
+
+  --animate-marquee: marquee 20s linear infinite;
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-on-surface);
+  font-family: var(--font-body-md);
+  overflow-x: hidden;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.material-symbols-filled {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.header-shrink {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+  background-color: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 4px 20px rgba(27, 43, 68, 0.06);
+}
+
+.service-card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 12px 32px rgba(27, 43, 68, 0.12);
+}
+
+.font-headline-md,
+.font-headline-lg {
+  font-weight: 700;
+}
+
+.font-headline-xl-mobile,
+.font-headline-xl {
+  font-weight: 800;
+}
+
+.font-label-bold {
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
